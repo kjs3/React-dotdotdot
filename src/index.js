@@ -41,15 +41,15 @@ Dotdotdot.prototype.update = function() {
     this.forceUpdate();
 };
 
-Dotdotdot.prototype.render = function() {
+Dotdotdot.prototype.render = function(props) {
   var _ref = function (container) {
     this.container = container;
   }.bind(this);
   return React.createElement(
     "div",
     { ref: _ref,
-    className: this.props.className },
-    this.props.children
+    className: props.className },
+    props.children
   );
 };
 
